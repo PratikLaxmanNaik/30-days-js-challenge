@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+
+
+    <script>
+        // activity 1 : variable declaration 
+        // task 1 
+        var myNumber = 100;
+        console.log(myNumber);
+
+        // task 2 
+        let myString = "Chai aur Code";
+        console.log(myString);
+
+        // activity 2 : constant declaration 
+        // task 3 
+        const myBoolean = true;
+        console.log(myBoolean);
+
+        // activity 3 : data types -> number, string, boolean, object, array 
+        // task 4 
+        let myNumber1 = 75;
+        console.log("Number:", myNumber1, "Type:", typeof myNumber1);
+
+        let myString1 = "saturday";
+        console.log(`String: ${myString1}, Type: ${typeof myString1}`);
+
+        const myBoolean1 = true;
+        console.log(`Boolean: ${myBoolean1}, Type: ${typeof myBoolean1}`);
+
+        let myObject = {
+            name: "pratik",
+            age: 35,
+            address: "pune"
+        };
+        console.log(`Object: ${JSON.stringify(myObject)}, Type: ${typeof myObject}`);
+
+        let myArray = [1, 2, 3, 4, 5];
+        console.log(`Array: ${myArray}, Type: ${typeof myArray}`);
+
+        // activity 4 : reassigning variable
+        // task 5 
+        let myVariable = 5;
+        console.log('Initial value: ', myVariable);
+
+        myVariable = 10;
+        console.log('New value: ', myVariable);
+
+        // activity 5 : understanding constant 
+        // task 6 
+        const myConstant = 50;
+        console.log('Initial value: ', myConstant);
+
+        try {
+            myConstant = 100;
+        } catch (error) {
+            console.error("Error on reassignment: ", error);
+        }
+
+        console.log("Final value:", myConstant);
+
+    </script>
+</body>
+
+</html>
