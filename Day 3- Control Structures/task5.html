@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <script>
+        // Task 5: Write a program that uses a switch case to assign a grade ('A', 'B','C','D','F') based on a score and log grade to the console. 
+
+        let score = parseInt(prompt('Enter you score (0-100):'));
+
+        if (isNaN(score) || score<0 || score >100) {
+            console.log('Please enter a valid score between 0 and 100.');
+        } else {
+            let grade;
+
+            switch(true){
+                case (score>=90):
+                        grade = 'A+';
+                        break;
+                case (score>=80):
+                        grade = 'A';
+                        break;
+                case (score>=70):
+                        grade = 'B+';
+                        break;
+                case (score>=60):
+                        grade = 'B';
+                        break;
+                case (score>=50):
+                        grade = 'C';
+                        break;
+                default:
+                        grade = 'F';
+            }
+
+            console.log(`Your grade is ${grade}.`);
+        }
+    </script>
+</body>
+</html>

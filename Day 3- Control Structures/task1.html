@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <script>
+        // Activity 1: If-Else Statements 
+        // Task 1: Write a program to check is a number is positive, negative, or zero, and log the result to the console. 
+        
+        let number = parseFloat(prompt('Enter a number'));
+
+        if (isNaN(number)) {
+            console.log('Plese enter a valid number');
+        } else if(number > 0) {
+            console.log(`${number} is positive`);
+        } else if(number < 0){
+            console.log(`${number} is negative`);
+        } else {
+            console.log(`${number} is zero`);
+        }
+
+    </script>
+</body>
+</html>
